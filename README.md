@@ -4,7 +4,7 @@ En México hay casi 1.6 millones de personas dedicadas a la preparación de comi
 
 Brenda del equipo de Diseño de Experiencias de Usuario (UX), realizó un trabajo de research con los empleados de restaurantes como Domino's Pizza, Mc'Donalds, Casino Yak entre otros. Para encontrar a nuestra User persona.
 
-##User Persona 
+**User persona** 
 
 
 Alejandra: tiene 21 años, trabaja para poder seguir estudiando.
