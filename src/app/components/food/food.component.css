@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    grid-template-columns: 70% .1% auto;
+    background: #eeece6;
+    height: 29vh;
+}
+
+.hamburgers {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 27% 27% 27% 17%;
+    ;
+    border-right: #707070;
+    height: 100%;
+}
+
+.hamburger-box {
+    width: 238.6px;
+    height: 115px;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 2px #707070;
+    border-radius: 6%;
+}
+
+.margin {
+    display: grid;
+    grid-column: 2;
+    background: #707070;
+}
