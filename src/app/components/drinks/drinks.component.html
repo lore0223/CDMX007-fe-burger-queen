@@ -1,9 +1,9 @@
 <main class="container">
     <section class="hamburgers">
         <article class="hamburger-box" *ngFor="let drinks of drinksArea">
-            <img src="../../../assets/imgns/hamburguesasen.png" class="-hamburguesa">
-            <span class="simple">Sencilla</span>
-            <span class="price">$</span>
+            <img [src]="drinks.img" class="-hamburguesa">
+            <span class="simple">{{drinks.nombre}}</span>
+            <span class="price">${{drinks.costo}}</span>
 
         </article>
     </section>

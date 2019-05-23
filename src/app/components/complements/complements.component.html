@@ -1,9 +1,9 @@
 <main class="container">
     <section class="hamburgers">
         <article class="hamburger-box" *ngFor="let complements of complementsArea">
-            <img src="../../../assets/imgns/hamburguesasen.png" class="-hamburguesa">
-            <span class="simple">Sencilla</span>
-            <span class="price">$</span>
+            <img [src]="complements.img" class="-hamburguesa">
+            <span class="simple">{{complements.nombre}}</span>
+            <span class="price">${{complements.costo}}</span>
 
         </article>
     </section>

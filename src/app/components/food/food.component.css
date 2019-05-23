@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 70% .1% auto;
     background: #eeece6;
-    height: 29vh;
+    height: 55vh;
 }
 
 .hamburgers {
@@ -15,6 +15,9 @@
 }
 
 .hamburger-box {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 75% auto;
     width: 238.6px;
     height: 115px;
     box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.16);
@@ -26,4 +29,46 @@
     display: grid;
     grid-column: 2;
     background: #707070;
+}
+
+.-hamburger {
+    width: 37px;
+    height: 37px;
+    object-fit: contain;
+    margin: 4px 27px 9px 6px;
+    z-index: 2;
+}
+
+.burger-name {
+    width: 73px;
+    height: 82px;
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.92;
+    letter-spacing: normal;
+    text-align: left;
+    color: black;
+    margin-top: 23%
+}
+
+.circle-yellow {
+    width: 46.6px;
+    height: 46.6px;
+    border-radius: 100px;
+    border: solid 2px #fac105;
+    margin: 38px 36px 9px 17px;
+}
+
+.price {
+    grid-column: 2;
+    width: 41px;
+    height: 28px;
+    font-family: Roboto;
+    font-size: 23px;
+    text-align: right;
+    color: black;
+    margin-left: 104px;
 }

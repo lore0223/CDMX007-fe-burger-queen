@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable( )
 export class ComplementsService{
 
-    private complements:any = [
+    private complements:Complements[] = [
         {
             "id" : 11,
             "nombre" : "Papas a la francesa",
@@ -29,4 +29,12 @@ export class ComplementsService{
     getComplements(){
         return this.complements;
     }
+}
+
+export interface Complements{
+    id:            number;
+    nombre:        string;
+    costo:         number;
+    complementos:  boolean;
+    img:           string;
 }

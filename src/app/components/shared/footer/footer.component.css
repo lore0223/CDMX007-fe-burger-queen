@@ -22,3 +22,18 @@ footer {
     border-radius: 24px;
     border: solid 2px #721a16;
 }
+
+.typography {
+    width: 147px;
+    height: 76px;
+    opacity: 0.96;
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.85;
+    letter-spacing: normal;
+    text-align: center;
+    color: #721a16;
+}

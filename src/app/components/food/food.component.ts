@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BurgerService }  from '../../service/burgerq.service'
+import { BurgerService, Burger}  from '../../service/burgerq.service'
 
 
 @Component({
@@ -9,7 +9,7 @@ import { BurgerService }  from '../../service/burgerq.service'
 })
 export class FoodComponent implements OnInit {
 
-burgerArea:any = {}  ;
+burgerArea:Burger[] = []  ;
 
   constructor( private _burgerService:BurgerService) { 
     console.log('constructor');

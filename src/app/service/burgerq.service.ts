@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable( )
 export class BurgerService {
 
-    private burgerqueen:any = [
+    private burgerqueen:Burger[] = [
            
         {
             "id" : 5,
@@ -17,7 +17,7 @@ export class BurgerService {
             "nombre" : "Doble Res",
             "costo" : 55,
             "hamburguesas" : true,
-            "img" : "assets/imgns/hamburguesasen.png"
+            "img" : "assets/imgns/hamburguesadob.png"
         },  
         {
             "id" : 5,
@@ -31,7 +31,7 @@ export class BurgerService {
             "nombre" : "Doble Pollo",
             "costo" : 40,
             "hamburguesas" : true,
-            "img" : "assets/imgns/hamburguesasen.png"
+            "img" : "assets/imgns/hamburguesadob.png"
         },  
         {
             "id" : 5,
@@ -71,4 +71,12 @@ export class BurgerService {
     getBurgerQueen(){
         return this.burgerqueen;
     }
+}
+
+export interface Burger{
+    id:     number;
+    nombre: string;
+    costo:  number;
+    hamburguesas:boolean;
+    img:    string;
 }

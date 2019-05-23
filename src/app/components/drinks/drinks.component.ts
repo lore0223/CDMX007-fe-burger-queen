@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DrinksService} from '../../service/drinks.service';
+import { DrinksService, Drinks} from '../../service/drinks.service';
 
 @Component({
   selector: 'app-drinks',
@@ -8,7 +8,7 @@ import { DrinksService} from '../../service/drinks.service';
 })
 export class DrinksComponent implements OnInit {
 
-drinksArea:any = {} ;
+drinksArea: Drinks[] = [] ;
 
   constructor(private _drinksService:DrinksService) {
     console.log('bebidas listas para usarse!');

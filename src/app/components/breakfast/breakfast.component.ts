@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BreakfastService }  from '../../service/breakfast.service';
+import { BreakfastService, Breakfast }  from '../../service/breakfast.service';
 
 @Component({
   selector: 'app-breakfast',
@@ -8,7 +8,7 @@ import { BreakfastService }  from '../../service/breakfast.service';
 })
 export class BreakfastComponent implements OnInit {
 
-  breakfastArea:any = {} ;
+  breakfastArea:Breakfast[] = [] ;
 
   constructor(private _breakfastService:BreakfastService) {
     console.log('breakfast constructor');

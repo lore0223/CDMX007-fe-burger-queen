@@ -19,6 +19,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { BreakfastComponent } from './components/breakfast/breakfast.component';
 import { ComplementsComponent } from './components/complements/complements.component';
 import { DrinksComponent } from './components/drinks/drinks.component';
+import { TicketComponent } from './components/shared/ticket/ticket.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { DrinksComponent } from './components/drinks/drinks.component';
     BreakfastComponent,
     ComplementsComponent,
     DrinksComponent,
+    TicketComponent,
     
   ],
   imports: [

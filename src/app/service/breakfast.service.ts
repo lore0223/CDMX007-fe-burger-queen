@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable( )
 export class BreakfastService{
 
-    private breakfast:any = [
+    private breakfast:Breakfast[]= [
         {
             "id" : 1,
             "nombre" : "Sandwich de jamón y queso",
@@ -23,7 +23,7 @@ export class BreakfastService{
             "nombre" : "Café americano",
             "costo" : 20,
             "desayunos" : true,
-            "img" : "assets/imgns/taza-para-café.png"
+            "img" : "assets/imgns/taza-para-cafe.png"
         },  
         {
             "id" : 4,
@@ -42,4 +42,13 @@ export class BreakfastService{
     getBreakfast(){
         return this.breakfast;
     }
+}
+
+export interface Breakfast{
+    id :         number;
+    nombre :     string;
+    costo :      number;
+    desayunos : boolean;
+    img :        string;
+
 }

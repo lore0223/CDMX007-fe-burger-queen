@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ComplementsService } from '../../service/complements.service';
+import { ComplementsService, Complements } from '../../service/complements.service';
 
 @Component({
   selector: 'app-complements',
@@ -9,7 +9,7 @@ import { ComplementsService } from '../../service/complements.service';
 
 export class ComplementsComponent implements OnInit {
 
-complementsArea:any = {};
+complementsArea:Complements[] = [];
 
   constructor(private _complementsService:ComplementsService) { 
     console.log('servicio de complementos');
