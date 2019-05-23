@@ -1,0 +1,11 @@
+<main class="container">
+    <section class="hamburgers">
+        <article class="hamburger-box" *ngFor="let breakfast of breakfastArea">
+            <img [src]="breakfast.img" class="-hamburguesa">
+            <span class="simple">{{breakfast.nombre}}</span>
+            <span class="price">${{breakfast.costo}}</span>
+
+        </article>
+    </section>
+    <div class="margin"></div>
+</main>
