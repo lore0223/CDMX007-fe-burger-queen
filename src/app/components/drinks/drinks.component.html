@@ -1,8 +1,10 @@
 <main class="container">
-    <section class="hamburgers">
-        <article class="hamburger-box" *ngFor="let drinks of drinksArea">
-            <img [src]="drinks.img" class="-hamburguesa">
-            <span class="simple">{{drinks.nombre}}</span>
+    <section class="drinks">
+        <article (click)="searchItem(i)" class="drink-box" *ngFor="let drinks of drinksArea; let i = index">
+            <div class="yellow-circle">
+                <img [src]="drinks.img" class="drink-w-s">
+            </div>
+            <span class="drink-name">{{drinks.nombre}}</span>
             <span class="price">${{drinks.costo}}</span>
 
         </article>

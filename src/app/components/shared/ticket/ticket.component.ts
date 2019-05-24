@@ -18,5 +18,9 @@ export class TicketComponent implements OnInit {
  
   }
 
+  getproducts(){
+    return this._orderService.burgers;
+  }
+
  
 }

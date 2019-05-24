@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DrinksService, Drinks} from '../../service/drinks.service';
+import { OrderService } from '../../service/order.service';
 
 @Component({
   selector: 'app-drinks',
@@ -10,8 +11,8 @@ export class DrinksComponent implements OnInit {
 
 drinksArea: Drinks[] = [] ;
 
-  constructor(private _drinksService:DrinksService) {
-    console.log('bebidas listas para usarse!');
+  constructor(private _drinksService:DrinksService,
+              private _orderService:OrderService) {
     
    }
 
@@ -19,6 +20,18 @@ drinksArea: Drinks[] = [] ;
     this.drinksArea = this._drinksService.getDrinks();
     console.log(this.drinksArea);
     
+  }
+
+  product:object;
+
+  public searchItem( index ){
+    this.drinksArea.forEach(element => {
+      if(this.drinksArea.indexOf(element) == index){
+        this.product=element;
+        console.log(this.product)
+        this._orderService.getProduct(this.product);
+      }
+    })
   }
 
 }

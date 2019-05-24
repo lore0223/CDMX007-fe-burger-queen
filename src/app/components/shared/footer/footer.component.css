@@ -3,6 +3,7 @@ footer {
     grid-template-columns: 70% auto;
     grid-column: 2;
     background: #eeece6;
+    margin-top: 0%;
 }
 
 .total {
