@@ -10,6 +10,7 @@ import { BurgerService } from './service/burgerq.service';
 import { BreakfastService } from './service/breakfast.service';
 import { ComplementsService } from './service/complements.service';
 import { DrinksService } from './service/drinks.service';
+import { OrderService } from './service/order.service';
 
 //COMPONENTES
 import { AppComponent } from './app.component';
@@ -22,6 +23,7 @@ import { DrinksComponent } from './components/drinks/drinks.component';
 import { TicketComponent } from './components/shared/ticket/ticket.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +34,7 @@ import { TicketComponent } from './components/shared/ticket/ticket.component';
     ComplementsComponent,
     DrinksComponent,
     TicketComponent,
+  
     
   ],
   imports: [
@@ -42,7 +45,8 @@ import { TicketComponent } from './components/shared/ticket/ticket.component';
     BurgerService,
     BreakfastService,
     ComplementsService,
-    DrinksService
+    DrinksService,
+    OrderService
   ],
   bootstrap: [AppComponent]
 })

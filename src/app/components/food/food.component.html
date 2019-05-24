@@ -1,6 +1,6 @@
 <main class="container">
     <section class="hamburgers">
-        <article class="hamburger-box" *ngFor="let burger of burgerArea">
+        <article (click)="searchItem(i)" class="hamburger-box" *ngFor="let burger of burgerArea; let i = index">
             <div class="circle-yellow">
                 <img [src]="burger.img" class="-hamburger">
             </div>

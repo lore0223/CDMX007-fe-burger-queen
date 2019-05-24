@@ -8,8 +8,9 @@
 .hamburgers {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-rows: 17% 17% 17% 17%;
     border-right: #707070;
+    margin-left: 7%;
+    margin-top: 10%;
 }
 
 .hamburger-box {

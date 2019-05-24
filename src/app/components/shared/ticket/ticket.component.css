@@ -1,0 +1,12 @@
+.ticket {
+    display: grid;
+    grid-template-columns: 70% auto;
+    background: #eeece6;
+    height: 55vh;
+    margin-top: -39%;
+}
+
+.order-ticket {
+    display: grid;
+    grid-column: 2;
+}

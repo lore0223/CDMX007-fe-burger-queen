@@ -9,9 +9,9 @@
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-rows: 27% 27% 27% 17%;
-    ;
     border-right: #707070;
     height: 100%;
+    margin-left: 14%;
 }
 
 .hamburger-box {
