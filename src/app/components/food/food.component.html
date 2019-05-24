@@ -1,7 +1,7 @@
 <main class="container">
     <section class="hamburgers">
         <article (click)="searchItem(i)" class="hamburger-box" *ngFor="let burger of burgerArea; let i = index">
-            <div class="circle-yellow">
+            <div class="yellow-circle">
                 <img [src]="burger.img" class="-hamburger">
             </div>
             <span class="burger-name">{{burger.nombre}}</span>
