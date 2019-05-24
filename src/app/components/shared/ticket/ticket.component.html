@@ -1,3 +1,8 @@
-<p>
-  ticket works!
-</p>
+<div class="ticket">
+
+    <article class="order-ticket" *ngFor="let product of _orderService.burgers">
+        <p>{{product.nombre}} {{product.costo}}</p>
+
+    </article>
+
+</div>
