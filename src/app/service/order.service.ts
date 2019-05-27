@@ -5,6 +5,8 @@ export class OrderService {
   
     contador : number = 0;
     burgers  : any [ ]= [];
+    newArr   : any;
+
     constructor() { }
    
     public incrementValue(){
@@ -17,6 +19,18 @@ export class OrderService {
       this.burgers.push(item)
       console.log(this.burgers);
       }
+  
+    public delete( index ) {
+      this.burgers.forEach(element=>{
+        if(this.burgers.indexOf(element)== index){
+        this.newArr = element.splice(index,1);
+        console.log(this.newArr);
+        
+        }
+      })
+      
+    } 
+  
   
     }
   

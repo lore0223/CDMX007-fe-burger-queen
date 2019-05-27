@@ -5,14 +5,14 @@ export class DrinksService{
 
     private drinks:Drinks[] = [
         {
-            "id" : 9,
+            "id" : 15,
             "nombre" : "Refresco",
             "costo" : 15,
             "bebidas" : true,
             "img" : "assets/imgns/cocacola.png"
         }, 
         {
-            "id" : 10,
+            "id" : 16,
             "nombre" : "Agua",
             "costo" : 15,
             "bebidas" : true,

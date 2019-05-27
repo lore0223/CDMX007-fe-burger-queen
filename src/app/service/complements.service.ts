@@ -5,14 +5,14 @@ export class ComplementsService{
 
     private complements:Complements[] = [
         {
-            "id" : 11,
+            "id" : 13,
             "nombre" : "Papas a la francesa",
             "costo" : 15,
             "complementos" : true,
             "img" : "assets/imgns/patatas-fritas.png"
         },  
         {
-            "id" : 12,
+            "id" : 14  ,
             "nombre" : "Aros de cebolla",
             "costo" : 15,
             "complementos" : true,

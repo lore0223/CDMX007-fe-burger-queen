@@ -1,6 +1,6 @@
 <main class="container">
     <section class="complements">
-        <article class="complement-box" *ngFor="let complements of complementsArea">
+        <article (click)="searchItem(i)" class="complement-box" *ngFor="let complements of complementsArea; let i = index">
             <div class="yellow-container">
                 <img [src]="complements.img" class="complement-img">
             </div>

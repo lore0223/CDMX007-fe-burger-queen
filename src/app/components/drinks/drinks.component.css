@@ -71,3 +71,7 @@
     color: black;
     margin-left: 104px;
 }
+
+.drink-box:hover {
+    border: solid 3px #721a16;
+}

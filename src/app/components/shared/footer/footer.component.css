@@ -24,6 +24,11 @@ footer {
     border: solid 2px #721a16;
 }
 
+.buttons-total:hover {
+    background: #721a16;
+    color: #fac105;
+}
+
 .typography {
     width: 147px;
     height: 76px;

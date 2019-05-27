@@ -13,14 +13,17 @@ export class TicketComponent implements OnInit {
 
    }
     
-    
+  
   ngOnInit() {
  
   }
 
   getproducts(){
-    return this._orderService.burgers;
+    return this._orderService.burgers
   }
+
+  
+  
 
  
 }

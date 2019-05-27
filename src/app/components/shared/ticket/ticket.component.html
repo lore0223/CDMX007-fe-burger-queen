@@ -3,9 +3,9 @@
     <article class="order-ticket" *ngFor="let product of getproducts()">
         <span class="product-name">{{product.nombre}} </span>
         <span class="price">${{product.costo}}</span>
-        <div class="yellow-circle">
+        <a class="yellow-circle">
             <img class="delete" src="../../../../assets/imgns/borrar.png" alt="trash">
-        </div>
+        </a>
     </article>
 
 </div>
