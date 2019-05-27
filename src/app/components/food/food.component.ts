@@ -33,13 +33,13 @@ burgerArea:Burger[] = []  ;
 
   public searchItem( index ){
     this.burgerArea.forEach(element => {
-      if(this.burgerArea.indexOf(element) == index){
+      if (this.burgerArea.indexOf(element) == index){
         this.product=element;
         console.log(this.product)
         this._orderService.getProduct(this.product);
       }
     })
   }
-
+ 
 }
 

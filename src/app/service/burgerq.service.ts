@@ -13,49 +13,49 @@ export class BurgerService {
             "img" : "assets/imgns/hamburguesasen.png"
         },
         {
-            "id" : 5,
+            "id" : 6,
             "nombre" : "Doble Res",
             "costo" : 55,
             "hamburguesas" : true,
             "img" : "assets/imgns/hamburguesadob.png"
         },  
         {
-            "id" : 5,
+            "id" : 7,
             "nombre" : "Sencilla Pollo",
             "costo" : 40,
             "hamburguesas" : true,
             "img" : "assets/imgns/hamburguesasen.png"
         },  
         {
-            "id" : 5,
+            "id" : 8,
             "nombre" : "Doble Pollo",
             "costo" : 40,
             "hamburguesas" : true,
             "img" : "assets/imgns/hamburguesadob.png"
         },  
         {
-            "id" : 5,
+            "id" : 9,
             "nombre" : "Sencilla Vegetariana",
             "costo" : 40,
             "hamburguesas" : true,
             "img" : "assets/imgns/hamburguesasen.png"
         },   
         {
-            "id" : 6,
+            "id" : 10,
             "nombre" : "Doble Vegetariana",
             "costo" : 55,
             "hamburguesas" : true,
             "img" : "assets/imgns/hamburguesadob.png"
         },  
         {
-            "id" : 7,
+            "id" : 11,
             "nombre" : "Extra queso",
             "costo" : 15,
             "hamburguesas" : true,
             "img" : "assets/imgns/queso.png"
         },  
         {
-            "id" : 8,
+            "id" : 12,
             "nombre" : "Huevo",
             "costo" : 15,
             "hamburguesas" : true,

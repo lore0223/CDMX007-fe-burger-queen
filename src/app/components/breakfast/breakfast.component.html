@@ -1,8 +1,10 @@
 <main class="container">
-    <section class="hamburgers">
-        <article class="hamburger-box" *ngFor="let breakfast of breakfastArea">
-            <img [src]="breakfast.img" class="-hamburguesa">
-            <span class="simple">{{breakfast.nombre}}</span>
+    <section class="breakfast">
+        <article (click)="searchItem(i)" class="breakfast-box" *ngFor="let breakfast of breakfastArea; let i = index">
+            <div class="yellow-circle">
+                <img [src]="breakfast.img" class="options-brkfst">
+            </div>
+            <span class="breakfast-name">{{breakfast.nombre}}</span>
             <span class="price">${{breakfast.costo}}</span>
 
         </article>

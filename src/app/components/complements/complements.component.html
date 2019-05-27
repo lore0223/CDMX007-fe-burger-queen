@@ -1,8 +1,10 @@
 <main class="container">
-    <section class="hamburgers">
-        <article class="hamburger-box" *ngFor="let complements of complementsArea">
-            <img [src]="complements.img" class="-hamburguesa">
-            <span class="simple">{{complements.nombre}}</span>
+    <section class="complements">
+        <article (click)="searchItem(i)" class="complement-box" *ngFor="let complements of complementsArea; let i = index">
+            <div class="yellow-container">
+                <img [src]="complements.img" class="complement-img">
+            </div>
+            <span class="complement-name">{{complements.nombre}}</span>
             <span class="price">${{complements.costo}}</span>
 
         </article>

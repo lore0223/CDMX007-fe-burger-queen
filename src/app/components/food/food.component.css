@@ -54,7 +54,7 @@
     margin-top: 23%
 }
 
-.circle-yellow {
+.yellow-circle {
     width: 46.6px;
     height: 46.6px;
     border-radius: 100px;
@@ -71,4 +71,8 @@
     text-align: right;
     color: black;
     margin-left: 104px;
+}
+
+.hamburger-box:hover {
+    border: solid 3px #721a16;
 }

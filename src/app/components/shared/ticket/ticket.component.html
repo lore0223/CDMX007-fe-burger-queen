@@ -1,8 +1,11 @@
 <div class="ticket">
 
-    <article class="order-ticket" *ngFor="let product of _orderService.burgers">
-        <p>{{product.nombre}} {{product.costo}}</p>
-
+    <article class="order-ticket" *ngFor="let product of getproducts()">
+        <span class="product-name">{{product.nombre}} </span>
+        <span class="price">${{product.costo}}</span>
+        <a class="yellow-circle">
+            <img class="delete" src="../../../../assets/imgns/borrar.png" alt="trash">
+        </a>
     </article>
 
 </div>
