@@ -9,14 +9,20 @@ import { OrderService } from '../../../service/order.service';
 })
 export class TicketComponent implements OnInit {
 
-  constructor(private _orderService:OrderService,){
+  constructor(private _orderService:OrderService){
 
    }
     
   
+
   ngOnInit() {
  
   }
+  
+  deleteProducts(index){
+ return this._orderService.delete(index);
+  }
+  
 
   getproducts(){
     return this._orderService.burgers

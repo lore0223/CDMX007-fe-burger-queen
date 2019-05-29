@@ -1,7 +1,7 @@
 <footer class="footer">
 
-    <div class="total">
-        <p>Total</p>
+    <div class="total" *ngIf=" getProductsTicket()">
+        <p>Total $ {{this._orderService.add}}</p>
     </div>
 
     <div class="buttons-footer abc-styles">

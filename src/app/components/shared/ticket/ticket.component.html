@@ -1,11 +1,12 @@
 <div class="ticket">
 
-    <article class="order-ticket" *ngFor="let product of getproducts()">
+    <article class="order-ticket" *ngFor="let product of getproducts(); let i = index">
         <span class="product-name">{{product.nombre}} </span>
         <span class="price">${{product.costo}}</span>
         <a class="yellow-circle">
-            <img class="delete" src="../../../../assets/imgns/borrar.png" alt="trash">
+            <img (click)="deleteProducts(i) " class="delete" src="../../../../assets/imgns/borrar.png" alt="trash">
         </a>
+
     </article>
 
 </div>
